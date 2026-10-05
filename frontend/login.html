@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>CampusConnect | Login</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="login-page">
+
+
+    <!-- BACKGROUND OVERLAY -->
+
+    <div class="login-overlay"></div>
+
+
+    <!-- TOP BAR -->
+
+    <header class="login-topbar">
+
+        <a href="index.html" class="login-logo">
+            Campus<span>Connect</span>
+        </a>
+
+        <a
+            href="index.html"
+            class="back-home"
+        >
+            ← Back to Home
+        </a>
+
+    </header>
+
+
+    <!-- LOGIN -->
+
+    <main class="login-wrapper">
+
+        <section class="login-card">
+
+
+            <!-- CHITKARA LOGO -->
+
+            <div class="university-logo">
+
+                <img
+                    src="images/chitkara-logo.png"
+                    alt="Chitkara University"
+                >
+
+            </div>
+
+
+            <!-- CAMPUSCONNECT BRAND -->
+
+            <div class="login-brand">
+
+                <div class="brand-mark">
+                    CC
+                </div>
+
+                <div>
+
+                    <h2>
+                        CampusConnect
+                    </h2>
+
+                    <p>
+                        Student Campus Portal
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- HEADING -->
+
+            <div class="login-heading">
+
+                <span>
+                    WELCOME BACK
+                </span>
+
+                <h1>
+                    Your campus.<br>
+                    <strong>Your voice.</strong>
+                </h1>
+
+                <p>
+                    Login to report issues, track updates
+                    and stay connected with your campus.
+                </p>
+
+            </div>
+
+
+            <!-- LOGIN FORM -->
+
+            <form id="loginForm">
+
+
+                <!-- ROLL / EMAIL -->
+
+                <div class="login-field">
+
+                    <label for="loginIdentity">
+                        Roll Number / Email
+                    </label>
+
+                    <div class="input-box">
+
+                        <span class="input-icon">
+                            ◎
+                        </span>
+
+                        <input
+                            type="text"
+                            id="loginIdentity"
+                            placeholder="Enter roll number or email"
+                            autocomplete="username"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- PASSWORD -->
+
+                <div class="login-field">
+
+                    <div class="password-label">
+
+                        <label for="loginPassword">
+                            Password
+                        </label>
+
+                        <a
+                            href="#"
+                            onclick="forgotPassword(event)"
+                        >
+                            Forgot Password?
+                        </a>
+
+                    </div>
+
+
+                    <div class="input-box">
+
+                        <span class="input-icon">
+                            ◆
+                        </span>
+
+                        <input
+                            type="password"
+                            id="loginPassword"
+                            placeholder="Enter your password"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="login-show"
+                            onclick="togglePassword(
+                                'loginPassword',
+                                this
+                            )"
+                        >
+                            Show
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- REMEMBER -->
+
+                <div class="login-options">
+
+                    <label class="remember-option">
+
+                        <input
+                            type="checkbox"
+                            id="rememberMe"
+                        >
+
+                        <span>
+                            Remember me
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <!-- LOGIN BUTTON -->
+
+                <button
+                    type="submit"
+                    class="login-button"
+                >
+
+                    <span>
+                        Login to CampusConnect
+                    </span>
+
+                    <strong>
+                        →
+                    </strong>
+
+                </button>
+
+            </form>
+
+
+            <!-- DIVIDER -->
+
+            <div class="login-divider">
+
+                <span>
+                    NEW TO CAMPUSCONNECT?
+                </span>
+
+            </div>
+
+
+            <!-- REGISTER -->
+
+            <a
+                href="register.html"
+                class="register-button"
+            >
+                Create Student Account
+            </a>
+
+
+            <p class="login-footer-text">
+                Built for students • Made for a better campus
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

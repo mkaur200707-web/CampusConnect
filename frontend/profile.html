@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>CampusConnect | My Profile</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="profile-page">
+
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            Campus<span>Connect</span>
+        </a>
+
+        <div class="nav-links">
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a
+                href="profile.html"
+                class="active"
+            >
+                Profile
+            </a>
+
+            <a
+                href="#"
+                onclick="logout()"
+            >
+                Logout
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- PROFILE -->
+
+    <main class="profile-wrapper">
+
+
+        <!-- HEADING -->
+
+        <div class="profile-header">
+
+            <div>
+
+                <span class="profile-eyebrow">
+                    STUDENT PROFILE
+                </span>
+
+                <h1>
+                    My Profile
+                </h1>
+
+                <p>
+                    Your CampusConnect student information
+                    and campus activity.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- PROFILE CARD -->
+
+        <section class="profile-card">
+
+
+            <div class="profile-top">
+
+
+                <!-- DYNAMIC PROFILE PHOTO -->
+
+                <div class="profile-photo-wrapper">
+
+                    <div class="profile-photo">
+
+                        <img
+                            id="profileImage"
+                            src=""
+                            alt="Profile Picture"
+                        >
+
+                        <span id="defaultProfileIcon">
+                            👤
+                        </span>
+
+                    </div>
+
+
+                    <label
+                        for="changeProfilePhoto"
+                        class="change-photo"
+                    >
+                        Change Photo
+                    </label>
+
+                    <input
+                        type="file"
+                        id="changeProfilePhoto"
+                        accept="image/png,image/jpeg"
+                        hidden
+                    >
+
+                </div>
+
+
+                <!-- STUDENT INFORMATION -->
+
+                <div class="profile-main-info">
+
+                    <span>
+                        CAMPUSCONNECT STUDENT
+                    </span>
+
+                    <h2 id="profile-name">
+                        Student Name
+                    </h2>
+
+                    <p>
+                        Roll No:
+                        <strong id="profile-roll">
+                            -
+                        </strong>
+                    </p>
+
+                </div>
+
+
+                <!-- EDIT -->
+
+                <button
+                    class="edit-profile-btn"
+                    onclick="editProfile()"
+                >
+                    Edit Profile
+                </button>
+
+            </div>
+
+
+            <!-- CONTACT INFORMATION -->
+
+            <div class="profile-information">
+
+                <div class="info-box">
+
+                    <span>
+                        UNIVERSITY EMAIL
+                    </span>
+
+                    <strong id="profile-email">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div class="info-box">
+
+                    <span>
+                        PHONE NUMBER
+                    </span>
+
+                    <strong id="profile-phone">
+                        -
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- STATISTICS -->
+
+        <section class="profile-stats">
+
+            <div class="profile-stat">
+
+                <strong id="total-reports">
+                    0
+                </strong>
+
+                <span>
+                    Total Reports
+                </span>
+
+            </div>
+
+
+            <div class="profile-stat">
+
+                <strong id="open-reports">
+                    0
+                </strong>
+
+                <span>
+                    Open
+                </span>
+
+            </div>
+
+
+            <div class="profile-stat">
+
+                <strong id="progress-reports">
+                    0
+                </strong>
+
+                <span>
+                    In Progress
+                </span>
+
+            </div>
+
+
+            <div class="profile-stat">
+
+                <strong id="resolved-reports">
+                    0
+                </strong>
+
+                <span>
+                    Resolved
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- RECENT REPORTS -->
+
+        <section class="recent-reports">
+
+            <div class="section-title">
+
+                <div>
+
+                    <span>
+                        CAMPUS ACTIVITY
+                    </span>
+
+                    <h2>
+                        My Recent Reports
+                    </h2>
+
+                </div>
+
+                <a href="dashboard.html">
+                    View All →
+                </a>
+
+            </div>
+
+
+            <div class="empty-reports">
+
+                <strong>
+                    Your reports will appear here
+                </strong>
+
+                <p>
+                    Once you report a campus issue,
+                    you can track it from your profile.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
